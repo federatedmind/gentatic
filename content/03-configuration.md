@@ -15,7 +15,7 @@ export const siteConfig = {
   title: 'GenTatic',
   description: 'A lightning-fast, zero-config static site generator.',
   url: 'https://gentatic.com', 
-  author: 'GenTatic Team',
+  author: 'Federated Mind',
   
   postsPerPage: 10,
   logo: '/images/logo.png',

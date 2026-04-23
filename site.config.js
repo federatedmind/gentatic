@@ -2,7 +2,7 @@ export const siteConfig = {
   title: 'GenTatic',
   description: 'A lightning-fast, zero-config static site generator.',
   url: 'https://gentatic.com', // Replace with your actual domain
-  author: 'GenTatic Team',
+  author: 'Federated Mind',
   postsPerPage: 10,
   // Optional logo to display in the header (e.g., '/images/logo.png'). Leave empty for text-only.
   logo: '/gentatic/images/logo.png',
