@@ -1,0 +1,134 @@
+/* 
+  Theme Presets for GenTatic
+  Define CSS variables based on the `data-theme` attribute on the HTML element.
+*/
+
+/* 1. Default (Modern Dark) */
+:root, :root[data-theme="default"] {
+  --bg-color: #0d1117;
+  --text-color: #c9d1d9;
+  --primary-color: #58a6ff;
+  --accent-color: #bc8cff;
+  --card-bg: #161b22;
+  --card-border: #30363d;
+  --header-bg: rgba(13, 17, 23, 0.85);
+  --header-border: #30363d;
+  --text-muted: #8b949e;
+}
+
+/* 2. Light Minimal */
+:root[data-theme="light-minimal"] {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --primary-color: #000000;
+  --accent-color: #666666;
+  --card-bg: #fafafa;
+  --card-border: #eaeaea;
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --header-border: #eaeaea;
+  --text-muted: #666666;
+}
+
+/* 3. Dark Ocean */
+:root[data-theme="dark-ocean"] {
+  --bg-color: #0f172a;
+  --text-color: #e2e8f0;
+  --primary-color: #38bdf8;
+  --accent-color: #818cf8;
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --header-bg: rgba(15, 23, 42, 0.85);
+  --header-border: #334155;
+  --text-muted: #94a3b8;
+}
+
+/* 4. Dracula */
+:root[data-theme="dracula"] {
+  --bg-color: #282a36;
+  --text-color: #f8f8f2;
+  --primary-color: #ff79c6;
+  --accent-color: #bd93f9;
+  --card-bg: #44475a;
+  --card-border: #6272a4;
+  --header-bg: rgba(40, 42, 54, 0.9);
+  --header-border: #6272a4;
+  --text-muted: #6272a4;
+}
+
+/* 5. Solarized Light */
+:root[data-theme="solarized-light"] {
+  --bg-color: #fdf6e3;
+  --text-color: #657b83;
+  --primary-color: #268bd2;
+  --accent-color: #d33682;
+  --card-bg: #eee8d5;
+  --card-border: #93a1a1;
+  --header-bg: rgba(253, 246, 227, 0.9);
+  --header-border: #93a1a1;
+  --text-muted: #93a1a1;
+}
+
+/* 6. Solarized Dark */
+:root[data-theme="solarized-dark"] {
+  --bg-color: #002b36;
+  --text-color: #839496;
+  --primary-color: #2aa198;
+  --accent-color: #b58900;
+  --card-bg: #073642;
+  --card-border: #586e75;
+  --header-bg: rgba(0, 43, 54, 0.9);
+  --header-border: #586e75;
+  --text-muted: #586e75;
+}
+
+/* 7. Monokai */
+:root[data-theme="monokai"] {
+  --bg-color: #272822;
+  --text-color: #f8f8f2;
+  --primary-color: #a6e22e;
+  --accent-color: #fd971f;
+  --card-bg: #3e3d32;
+  --card-border: #75715e;
+  --header-bg: rgba(39, 40, 34, 0.9);
+  --header-border: #75715e;
+  --text-muted: #75715e;
+}
+
+/* 8. Nord */
+:root[data-theme="nord"] {
+  --bg-color: #2e3440;
+  --text-color: #d8dee9;
+  --primary-color: #88c0d0;
+  --accent-color: #b48ead;
+  --card-bg: #3b4252;
+  --card-border: #4c566a;
+  --header-bg: rgba(46, 52, 64, 0.9);
+  --header-border: #4c566a;
+  --text-muted: #4c566a;
+}
+
+/* 9. Synthwave */
+:root[data-theme="synthwave"] {
+  --bg-color: #241b2f;
+  --text-color: #f92aad;
+  --primary-color: #36f9f6;
+  --accent-color: #f92aad;
+  --card-bg: #262335;
+  --card-border: #ff7edb;
+  --header-bg: rgba(36, 27, 47, 0.9);
+  --header-border: #ff7edb;
+  --text-muted: #495495;
+}
+
+/* 10. Forest */
+:root[data-theme="forest"] {
+  --bg-color: #f4fce3;
+  --text-color: #2b8a3e;
+  --primary-color: #087f5b;
+  --accent-color: #d9480f;
+  --card-bg: #ebfbee;
+  --card-border: #b2f2bb;
+  --header-bg: rgba(244, 252, 227, 0.9);
+  --header-border: #b2f2bb;
+  --text-muted: #51cf66;
+}
