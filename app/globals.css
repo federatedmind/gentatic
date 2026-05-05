@@ -683,3 +683,58 @@ html[data-spacing="compact"] .post-content h3 {
 .docs-toc-link:hover {
   color: var(--text-color);
 }
+
+/* ==========================================================================
+   Docs Home Table of Contents
+   ========================================================================== */
+
+.docs-home-toc {
+  margin-top: 1rem;
+}
+
+.docs-home-toc h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.docs-home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.docs-home-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.docs-home-section h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.docs-home-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.docs-home-link {
+  display: block;
+  padding: 0.2rem 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.docs-home-link:hover {
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
