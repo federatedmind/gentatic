@@ -30,12 +30,15 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. As you edit
 
 ### Structure & Format
 
-By default, GenTatic is structured to read like a **blog or feed**. All your posts live directly in the `content/` directory as flat `.md` files. 
+GenTatic supports two distinct layout modes, configured via the `siteType` property in your `site.config.js`:
 
-The generator reads this folder, sorts all files chronologically based on the `date` in their frontmatter, and generates a unified timeline on the Homepage. Clicking a post navigates to `/posts/[slug]`.
+#### 1. Blog Mode (`siteType: 'blog'`)
+By default, you can drop flat `.md` files directly into the `content/` directory. The generator will read this folder, sort all files chronologically based on the `date` in their frontmatter, and generate a unified timeline on the Homepage. Clicking a post navigates to `/posts/my-post`.
 
-**Can you customize this structure?**
-Absolutely. If you want to change the site to read like a **book** or a **documentation site** (where chapters are sorted sequentially instead of by date), simply set `siteType: 'docs'` in your `site.config.js`. GenTatic will automatically read the `chapter:` number in your frontmatter and build a sequential Table of Contents for you!
+#### 2. Documentation Mode (`siteType: 'docs'`)
+If you want to build a deeply technical **book** or **documentation site**, GenTatic supports **recursive, nested directories**. 
+
+Simply structure your `content/` folder with sub-folders (e.g., `content/01-getting-started/1-installation.md`). GenTatic will automatically traverse the hierarchy, generate deep links (e.g., `/posts/01-getting-started/1-installation`), and build a collapsible, multi-level **Table of Contents sidebar** to easily navigate your chapters and sub-chapters!
 
 ### Frontmatter
 
