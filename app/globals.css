@@ -689,7 +689,8 @@ html[data-spacing="compact"] .post-content h3 {
    ========================================================================== */
 
 .docs-home-toc {
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  max-width: 900px;
 }
 
 .docs-home-toc h2 {
