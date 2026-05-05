@@ -30,6 +30,6 @@ export const siteConfig = {
 - **`logo`**: An optional absolute path to an image file.
 
 ### Behavior
-- **`postsPerPage`**: Controls the pagination logic on the homepage.
-- **`siteType`**: Set to `'blog'` to sort posts by date. Set to `'docs'` to use the recursive sidebar tree layout.
+- **`postsPerPage`**: Controls the pagination logic on the homepage (only applies when `siteType` is `'blog'`).
+- **`siteType`**: Set to `'blog'` to sort posts by date and use a paginated feed. Set to `'docs'` to use the recursive sidebar tree layout and a dedicated Table of Contents homepage.
 - **`spacing`**: Set to `'compact'` or `'relaxed'`.

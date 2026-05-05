@@ -101,11 +101,12 @@ GenTatic supports Google Analytics and GoatTracker out of the box. You can eithe
 
 GenTatic automatically generates navigation to help users read your content:
 
-### 1. Homepage Pagination
-If you have more posts than the `postsPerPage` setting in `site.config.js`, GenTatic will automatically split your homepage into multiple pages (e.g., `/page/2`, `/page/3`). "Newer Posts" and "Older Posts" links will seamlessly guide readers through your feed.
+### 1. Homepage Layout
+- **Blog Mode**: If you have more posts than the `postsPerPage` setting in `site.config.js`, GenTatic will automatically split your homepage into multiple pages (e.g., `/page/2`, `/page/3`). "Newer Posts" and "Older Posts" links will seamlessly guide readers through your feed.
+- **Docs Mode**: The homepage replaces the paginated feed with a clean, responsive **Table of Contents grid**, displaying all of your chapters and sections automatically.
 
 ### 2. Next/Previous Post Links
-At the bottom of every article, GenTatic automatically generates "Previous" and "Next" links pointing to the chronologically adjacent posts, keeping readers engaged in your content flow.
+At the bottom of every article, GenTatic automatically generates "Previous" and "Next" links. In Blog mode, these point to chronologically adjacent posts. In Docs mode, these point to the next logical chapter in your nested folder hierarchy!
 
 ---
 
