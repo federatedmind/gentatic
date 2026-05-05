@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
               </Link>
             </nav>
           </header>
-          <main>{children}</main>
+          <main className={siteConfig.siteType === 'docs' ? 'docs-wrapper' : 'site-main'}>{children}</main>
           <footer className="site-footer">
             <p>&copy; {new Date().getFullYear()} {siteConfig.author}</p>
           </footer>
