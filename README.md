@@ -33,7 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. As you edit
 GenTatic supports two distinct layout modes, configured via the `siteType` property in your `site.config.js`:
 
 #### 1. Blog Mode (`siteType: 'blog'`)
-By default, you can drop flat `.md` files directly into the `content/` directory. The generator will read this folder, sort all files chronologically based on the `date` in their frontmatter, and generate a unified timeline on the Homepage. You can customize the look of the blog via the `blogLayout` setting in `site.config.js` (`list` or `grid`). GenTatic will automatically calculate an estimated reading time for your posts. Clicking a post navigates to `/posts/my-post`.
+By default, you can drop flat `.md` files directly into the `content/` directory (or specify a custom directory using `contentDir` in your `site.config.js`). The generator will read this folder, sort all files chronologically based on the `date` in their frontmatter, and generate a unified timeline on the Homepage. You can customize the look of the blog via the `blogLayout` setting in `site.config.js` (`list` or `grid`). GenTatic will automatically calculate an estimated reading time for your posts. Clicking a post navigates to `/posts/my-post`.
 
 #### 2. Documentation Mode (`siteType: 'docs'`)
 If you want to build a deeply technical **book** or **documentation site**, GenTatic supports **recursive, nested directories**. 
@@ -84,6 +84,7 @@ export const siteConfig = {
   logo: '/images/logo.png', // Optional header logo
   
   siteType: 'docs', // 'blog' (date sort) or 'docs' (chapter sort)
+  contentDir: 'content', // The directory containing your markdown files
   blogLayout: 'grid', // 'list' or 'grid' (only applies to blog mode)
   spacing: 'compact', // 'compact' (less whitespace) or 'relaxed'
   theme: 'default',

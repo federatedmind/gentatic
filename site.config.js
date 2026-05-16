@@ -7,7 +7,9 @@ export const siteConfig = {
   // Optional logo to display in the header (e.g., '/images/logo.png'). Leave empty for text-only.
   logo: '/gentatic/images/logo.png',
   // Set to 'blog' or 'docs'
-  siteType: 'blog',
+  siteType: 'docs',
+  // The directory containing your markdown files.
+  contentDir: 'content',
   // Layout for the blog homepage ('list' or 'grid')
   blogLayout: 'grid',
   // Spacing mode: 'compact' (less vertical whitespace) or 'relaxed' (more whitespace). 
