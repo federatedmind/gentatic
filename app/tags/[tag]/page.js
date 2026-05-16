@@ -3,8 +3,13 @@ import { siteConfig } from '@/site.config';
 import PostList from '@/app/components/PostList';
 import { notFound } from 'next/navigation';
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const tags = getAllTags();
+  if (tags.length === 0) {
+    return [{ tag: 'empty' }];
+  }
   return tags.map((tag) => ({
     tag,
   }));

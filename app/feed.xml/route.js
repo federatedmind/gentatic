@@ -1,6 +1,8 @@
 import { getSortedPostsData } from '@/lib/markdown';
 import { siteConfig } from '@/site.config';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
   const posts = getSortedPostsData();
 
