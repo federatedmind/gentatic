@@ -30,7 +30,6 @@ export async function GET() {
   return new Response(rss, {
     headers: {
       'Content-Type': 'text/xml',
-      'Cache-Control': 's-maxage=86400, stale-while-revalidate',
     },
   });
 }
