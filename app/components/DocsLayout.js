@@ -60,8 +60,8 @@ export default function DocsLayout({ postData, docsTree }) {
         <h5 className="docs-toc-heading">On this page</h5>
         <ul className="docs-toc-list">
           {postData.subChapters && postData.subChapters.map((ch, idx) => (
-            <li key={idx} className="docs-toc-item">
-              <a href={`#${ch.slug}`} className="docs-toc-link">{ch.title}</a>
+            <li key={idx} className="docs-toc-item" style={{ paddingLeft: ch.level === 3 ? '1rem' : '0' }}>
+              <a href={`#${ch.slug}`} className="docs-toc-link" style={{ fontSize: ch.level === 3 ? '0.85rem' : '0.9rem', color: ch.level === 3 ? 'var(--text-color)' : 'var(--primary-color)' }}>{ch.title}</a>
             </li>
           ))}
         </ul>

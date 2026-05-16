@@ -116,6 +116,9 @@ GenTatic automatically generates navigation to help users read your content:
 ### 2. Next/Previous Post Links
 At the bottom of every article, GenTatic automatically generates "Previous" and "Next" links. In Blog mode, these point to chronologically adjacent posts. In Docs mode, these point to the next logical chapter in your nested folder hierarchy!
 
+### 3. "On This Page" Sidebar
+In Docs mode, GenTatic automatically parses the markdown of your current article and extracts `##` (H2) and `###` (H3) headers. It generates an intelligent, deeply-linked "On this page" right-hand sidebar for immediate in-page navigation.
+
 ---
 
 ## Customizing the Design
