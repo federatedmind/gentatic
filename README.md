@@ -33,7 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. As you edit
 GenTatic supports two distinct layout modes, configured via the `siteType` property in your `site.config.js`:
 
 #### 1. Blog Mode (`siteType: 'blog'`)
-By default, you can drop flat `.md` files directly into the `content/` directory. The generator will read this folder, sort all files chronologically based on the `date` in their frontmatter, and generate a unified timeline on the Homepage. Clicking a post navigates to `/posts/my-post`.
+By default, you can drop flat `.md` files directly into the `content/` directory. The generator will read this folder, sort all files chronologically based on the `date` in their frontmatter, and generate a unified timeline on the Homepage. You can customize the look of the blog via the `blogLayout` setting in `site.config.js` (`list` or `grid`). GenTatic will automatically calculate an estimated reading time for your posts. Clicking a post navigates to `/posts/my-post`.
 
 #### 2. Documentation Mode (`siteType: 'docs'`)
 If you want to build a deeply technical **book** or **documentation site**, GenTatic supports **recursive, nested directories**. 
@@ -49,6 +49,11 @@ Every markdown file must begin with YAML frontmatter. This metadata is used to g
 title: "Your Post Title Here"
 date: 2026-04-10
 description: A short description of what this post is about.
+author: "Author Name" # Optional
+coverImage: "/images/hero.png" # Optional banner image
+tags: ["nextjs", "tutorial"] # Optional
+featured: true # Optional (pins to top of blog feed)
+draft: true # Optional (hides from production builds)
 ---
 ```
 
@@ -79,8 +84,10 @@ export const siteConfig = {
   logo: '/images/logo.png', // Optional header logo
   
   siteType: 'docs', // 'blog' (date sort) or 'docs' (chapter sort)
+  blogLayout: 'grid', // 'list' or 'grid' (only applies to blog mode)
   spacing: 'compact', // 'compact' (less whitespace) or 'relaxed'
   theme: 'default',
+  darkTheme: 'dark-ocean', // Fallback theme when using the dark mode toggle
 
   kicker: 'THE MODERN STATIC SITE GENERATOR',
   intro: 'A high-performance, zero-configuration static site generator powered by Next.js. Craft elegant documentation and blogs using Markdown, select from premium design themes, and deploy seamlessly anywhere.',

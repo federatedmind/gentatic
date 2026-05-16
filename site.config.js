@@ -7,12 +7,16 @@ export const siteConfig = {
   // Optional logo to display in the header (e.g., '/images/logo.png'). Leave empty for text-only.
   logo: '/gentatic/images/logo.png',
   // Set to 'blog' or 'docs'
-  siteType: 'docs',
+  siteType: 'blog',
+  // Layout for the blog homepage ('list' or 'grid')
+  blogLayout: 'grid',
   // Spacing mode: 'compact' (less vertical whitespace) or 'relaxed' (more whitespace). 
   // 'compact' is recommended for docs.
   spacing: 'compact',
   // Options: 'default', 'light-minimal', 'dark-ocean', 'dracula', 'solarized-light', 'solarized-dark', 'monokai', 'nord', 'synthwave', 'forest'
   theme: 'default',
+  // Dark mode fallback theme
+  darkTheme: 'dark-ocean',
   analytics: {
     googleAnalyticsId: process.env.NEXT_PUBLIC_GA_ID || '', // e.g. G-XXXXXXX
     goatTrackerUrl: process.env.NEXT_PUBLIC_GOATTRACKER_URL || '', // e.g. https://your-goattracker.com/count.js

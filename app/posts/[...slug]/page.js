@@ -51,9 +51,23 @@ export default async function Post({ params }) {
   // Fallback for Blog layout
   return (
     <article className="post-article max-w-3xl mx-auto px-4 py-10">
+      {postData.coverImage && (
+        <div className="post-hero-image" style={{ backgroundImage: `url(${postData.coverImage})` }}></div>
+      )}
       <header className="post-header mb-8">
+        {postData.tags && postData.tags.length > 0 && (
+          <div className="post-tags-container">
+            {postData.tags.map(tag => (
+              <Link key={tag} href={`/tags/${tag}`} className="tag-pill">#{tag}</Link>
+            ))}
+          </div>
+        )}
         <h1 className="post-title text-4xl font-bold">{postData.title}</h1>
-        {postData.date && <p className="post-meta text-gray-500 mt-2">{postData.date}</p>}
+        <div className="post-meta-group text-gray-500 mt-2">
+          {postData.author && <span className="post-author">{postData.author}</span>}
+          {postData.date && <span className="post-date">{postData.date}</span>}
+          {postData.readingTime && <span className="post-reading-time">{postData.readingTime} min read</span>}
+        </div>
       </header>
       <div 
         className="post-content prose lg:prose-xl max-w-none"

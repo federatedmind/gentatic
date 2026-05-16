@@ -15,8 +15,10 @@ export const siteConfig = {
   logo: '/images/logo.png',
   
   siteType: 'docs',
+  blogLayout: 'grid',
   spacing: 'compact',
   theme: 'default',
+  darkTheme: 'dark-ocean',
 
   kicker: 'THE MODERN STATIC SITE GENERATOR',
   intro: 'A high-performance, zero-configuration static site generator...',
@@ -32,4 +34,6 @@ export const siteConfig = {
 ### Behavior
 - **`postsPerPage`**: Controls the pagination logic on the homepage (only applies when `siteType` is `'blog'`).
 - **`siteType`**: Set to `'blog'` to sort posts by date and use a paginated feed. Set to `'docs'` to use the recursive sidebar tree layout and a dedicated Table of Contents homepage.
+- **`blogLayout`**: Set to `'list'` or `'grid'` to configure the layout of your posts on the blog homepage (only applies when `siteType` is `'blog'`).
 - **`spacing`**: Set to `'compact'` or `'relaxed'`.
+- **`darkTheme`**: The fallback theme to use when a user toggles Dark Mode on (e.g. `'dark-ocean'`, `'dracula'`, etc.).
